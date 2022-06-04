@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#738ADC"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/header"
+        android:textSize="64dp" />
+
+    <TextView
+        android:id="@+id/subheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/subheader"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        android:paddingBottom="10dp" />
+
+    <Spinner
+        android:id="@+id/spinnerForItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/whatToDo"
+        android:paddingTop="10dp"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#567BFF"
+            android:text="@string/btnAdd"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#567BFF"
+            android:text="@string/btnRemove"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tasks"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#567BFF"
+        android:text="@string/btnClear"
+        android:textColor="@color/black" />
+
+</LinearLayout>
